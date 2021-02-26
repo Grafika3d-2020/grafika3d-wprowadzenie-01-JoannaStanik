@@ -71,11 +71,34 @@ cube.position.y = 0;
 cube.position.z = 0;
 // renderer.render( scene, camera );
 
+    const conegeometry = new THREE.ConeGeometry(5, 20, 32 );
+const conematerial = new THREE.MeshBasicMaterial( {color: 0xffff0});
+const cone = new THREE.Mesh( conegeometry, conematerial );
+scene.add( cone );
+
+cone.position.x = -50;
+cone.position.y =  20;
+cone.position.z =  20;
+
+    const geometry = new THREE.CylinderGeometry( 5, 5, 20, 32 );
+const material = new THREE.MeshBasicMaterial( {color: 0xffff00} );
+const cylinder = new THREE.Mesh( geometry, material );
+scene.add( cylinder );
+
+cylinder.rotation.z = 0;
+cylinder.rotation.x = 10;
+
+cylinder.position.x = -20;
+cylinder.position.y = 0;
+cylinder.position.z = 0;
 
 const animate = () => {
     requestAnimationFrame(animate)
     cube.rotation.x +=.03
     cube.rotation.y +=.03
+    cone.rotation.x +=.03
+    cylinder.rotation.x +=.03
+    cylinder.rotation.y +=.03
     renderer.render( scene, camera );
 }
 animate()
