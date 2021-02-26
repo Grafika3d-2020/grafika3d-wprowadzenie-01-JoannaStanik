@@ -66,9 +66,9 @@ scene.add( cube );
 cube.rotation.z = 0;
 cube.rotation.x = 10;
 
-cube.position.x = 0;
-cube.position.y = 0;
-cube.position.z = 0;
+cube.position.x = 30;
+cube.position.y = 20;
+cube.position.z = 20;
 // renderer.render( scene, camera );
 
     const conegeometry = new THREE.ConeGeometry(5, 20, 32 );
