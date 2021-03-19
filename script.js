@@ -16,12 +16,12 @@ function init() {
 
     let materialArray = [];
 
-    let texture_ft = new THREE.TextureLoader().load('/img/desertdawn_ft.jpg');
-    let texture_bk = new THREE.TextureLoader().load('/img/desertdawn_bk.jpg');
-    let texture_up = new THREE.TextureLoader().load('/img/desertdawn_up.jpg');
-    let texture_dn = new THREE.TextureLoader().load('/img/desertdawn_dn.jpg');
-    let texture_rt = new THREE.TextureLoader().load('/img/desertdawn_rt.jpg');
-    let texture_lf = new THREE.TextureLoader().load('/img/desertdawn_lf.jpg');
+    let texture_ft = new THREE.TextureLoader().load('desertdawn_ft.jpg');
+    let texture_bk = new THREE.TextureLoader().load('desertdawn_bk.jpg');
+    let texture_up = new THREE.TextureLoader().load('desertdawn_up.jpg');
+    let texture_dn = new THREE.TextureLoader().load('desertdawn_dn.jpg');
+    let texture_rt = new THREE.TextureLoader().load('desertdawn_rt.jpg');
+    let texture_lf = new THREE.TextureLoader().load('desertdawn_lf.jpg');
 
     materialArray.push(new THREE.MeshBasicMaterial({map: texture_ft}));
     materialArray.push(new THREE.MeshBasicMaterial({map: texture_bk}));
